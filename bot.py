@@ -1,6 +1,7 @@
+import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
-import fitz  # PyMuPDF
+import fitz
 import re
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
