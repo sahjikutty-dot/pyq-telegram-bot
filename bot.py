@@ -3,7 +3,7 @@ from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTyp
 import fitz  # PyMuPDF
 import re
 
-BOT_TOKEN = "8722326817:AAEmv-3nhQhaLmFMJ-M52_johtbBwi9eaZ0"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 # STEP 1: EXTRACT TEXT FROM PDF
 def load_pdf():
